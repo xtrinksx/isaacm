@@ -94,14 +94,14 @@ Pra testar isso, eu cadastrei a Coca-Cola como exemplo assim:
 INSERT INTO produtos (codigo, nome, calorias) 
 VALUES ('C001', 'Coca-Cola', '140'); 
 
-mandei os ingredientes dela separados:
+e outros exemplos tambem como:
 
-INSERT INTO produtos (nome, calorias, fabricante, ingredientes)
+INSERT INTO produtos (nome, calorias, fabricante, ingredientes) 
 VALUES ('Granola Natural',120,'Granola Vida', 'Aveia, mel, castanhas');
 
-E pronto a Coca ficou com os ingredientes organizados
+E pronto ficou com os ingredientes organizados
 
-Se for olhar no diagrama MySQL Workbench, tu vai ver a tabela produtos ligada com a ingredientes por uma setinha, bem simples
+Se for olhar no diagrama MySQL Workbench, tu vai ver a tabela produtos ligada com a ingredientes por uma setinha, bem simples e facil.
 
-E para depois a gente esta pensando em fazer umas consultas brabas, tipo:
+E para depois a gente esta pensando em fazer umas outras consultas boas, tipo:
 “me mostra os produtos com mais calorias”, ou “me mostra os que têm açúcar” e etc.
