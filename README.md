@@ -90,18 +90,14 @@ O FOREIGN KEY faz a conexão com a tabela produtos, E o ON DELETE CASCADE é tip
 Coca-Cola:
 
 Pra testar isso, eu cadastrei a Coca-Cola como exemplo assim:
+
 INSERT INTO produtos (codigo, nome, calorias) 
 VALUES ('C001', 'Coca-Cola', '140'); 
 
 mandei os ingredientes dela separados:
-INSERT INTO ingredientes (produto_id, nome_ingrediente)
-VALUES 
- (1, 'Água gaseificada'),
- (1, 'Açúcar'), 
- (1, 'Corante caramelo IV'),
- (1, 'Ácido fosfórico'),
- (1, 'Aromatizantes naturais'),
- (1, 'Cafeína'); 
+
+INSERT INTO produtos (nome, calorias, fabricante, ingredientes)
+VALUES ('Granola Natural',120,'Granola Vida', 'Aveia, mel, castanhas');
 
 E pronto a Coca ficou com os ingredientes organizados
 
